@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);  /* New Blue Gradient */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ==== Glassmorphism Container ==== */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.03);
+}
+
+/* ==== Headings (Centered) ==== */
+h1, h2, h3 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;  /* Ensure headings are centered */
+}
+
+/* ==== Input Fields ==== */
+input {
+    width: 95%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input::placeholder {
+    color: #ddd;
+    font-size: 14px;
+}
+
+input:focus {
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+}
+
+/* ==== Buttons ==== */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #4CAF50, #2E8B57);
+    color: white;
+    box-shadow: 0px 4px 12px rgba(0, 255, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2E8B57, #228B22);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ff6b6b, #d32f2f);
+    color: white;
+    box-shadow: 0px 4px 12px rgba(255, 0, 0, 0.3);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #d32f2f, #b71c1c);
+}
+
+/* ==== Table Styling ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 14px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.4);
+    font-weight: bold;
+}
+
+/* ==== Table Inputs ==== */
+td input {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 80px;
+    padding: 10px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+td input:focus {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+}
+
+/* ==== Responsive Design ==== */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
